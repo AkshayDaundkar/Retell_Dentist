@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { generateDentalResponse } = require("../services/openaiservice");
+const { generateDentalResponse } = require("../services/openaiService");
 
 router.post("/", async (req, res) => {
   const { conversation_history } = req.body;
